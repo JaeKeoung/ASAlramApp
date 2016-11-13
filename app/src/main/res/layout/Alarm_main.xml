@@ -16,7 +16,16 @@
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout"></LinearLayout>
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="66dp"
+            android:id="@+id/imageButton"
+            android:background="@drawable/AlramUI_main_addAlarmBtn"
+            android:layout_weight="0.03" />
+    </LinearLayout>
 
     <ListView
         android:layout_width="wrap_content"
