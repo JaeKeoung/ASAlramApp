@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/AlramUI_propertice_bgpng"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/cancelBtn"
+            android:background="@drawable/AlramUI_propertice_CSbtn_01"
+            android:layout_marginLeft="2dp" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/saveBtn"
+            android:background="@drawable/AlramUI_propertice_CSbtn_02"
+            android:layout_marginLeft="182dp" />
+
+    </LinearLayout>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TimePicker>
+
+</LinearLayout>
