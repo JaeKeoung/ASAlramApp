@@ -21,10 +21,10 @@
 
         <ImageButton
             android:layout_width="48dp"
-            android:layout_height="66dp"
-            android:id="@+id/imageButton"
-            android:background="@drawable/AlramUI_main_addAlarmBtn"
-            android:layout_weight="0.03" />
+            android:layout_height="56dp"
+            android:id="@+id/addA"
+            android:background="@drawable/alram_ui_main_add_alarmbtn" />
+
     </LinearLayout>
 
     <ListView

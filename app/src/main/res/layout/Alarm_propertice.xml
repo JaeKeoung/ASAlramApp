@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/AlramUI_propertice_bgpng"
+    android:background="@drawable/alram_ui_propertice_bg"
     android:weightSum="1">
 
     <LinearLayout
@@ -15,21 +15,183 @@
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="45dp"
-            android:id="@+id/cancelBtn"
-            android:background="@drawable/AlramUI_propertice_CSbtn_01"
+            android:id="@+id/cancel_btn"
+            android:background="@drawable/alram_ui_propertice_csbtn"
             android:layout_marginLeft="2dp" />
 
         <ImageButton
             android:layout_width="100dp"
             android:layout_height="45dp"
-            android:id="@+id/saveBtn"
-            android:background="@drawable/AlramUI_propertice_CSbtn_02"
+            android:id="@+id/save_btn"
+            android:background="@drawable/alram_ui_propertice_svbtn"
             android:layout_marginLeft="182dp" />
 
     </LinearLayout>
 
     <TimePicker
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TimePicker>
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="62dp"
+            android:layout_height="56dp"
+            android:id="@+id/imageButton2"
+            android:background="@drawable/alram_ui_g3_daybtn_07" />
+
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/alram_ui_g3_daybtn_08" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton4"
+            android:background="@drawable/alram_ui_g3_daybtn_09"
+            android:layout_weight="0.05" />
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton5"
+            android:background="@drawable/alram_ui_g3_daybtn_10" />
+
+        <ImageButton
+            android:layout_width="49dp"
+            android:layout_height="56dp"
+            android:id="@+id/imageButton6"
+            android:background="@drawable/alram_ui_g3_daybtn_11" />
+
+        <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton7"
+            android:background="@drawable/alram_ui_g3_daybtn_12" />
+
+        <ImageButton
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton8"
+            android:background="@drawable/alram_ui_g3_daybtn_13"
+            android:layout_weight="0.45" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:text="Re : "
+            android:background="#424242"
+            android:textColor="#fff"
+            android:textIsSelectable="false"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:background="#fff"
+            android:textSize="26dp"
+            android:text="      " />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:text=" times, after every"
+            android:background="#424242"
+            android:textColor="#fff"
+            android:textIsSelectable="false"
+            android:textSize="22dp" />
+
+        <EditText
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:id="@+id/editText3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mins"
+            android:id="@+id/textView2"
+            android:textSize="22dp"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music :"
+            android:id="@+id/textView3"
+            android:textColor="#fff"
+            android:textSize="26dp"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4"
+            android:layout_weight="0.88"
+            android:background="#fff"
+            android:textSize="22dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volume "
+            android:id="@+id/textView5"
+            android:textSize="26dp"
+            android:textColor="#fff" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:max="20"
+            android:id="@+id/volumeBar"
+            android:secondaryProgress="3"
+            android:layout_weight="0.94" />
+
+    </LinearLayout>
 
 </LinearLayout>
