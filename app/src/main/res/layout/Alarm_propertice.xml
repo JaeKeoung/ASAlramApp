@@ -28,10 +28,12 @@
 
     </LinearLayout>
 
-    <TimePicker
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/timePicker"
+        android:text="pick time"
+        android:onClick="showTimePickerDialog"
         android:layout_gravity="center_horizontal" />
 
     <LinearLayout
