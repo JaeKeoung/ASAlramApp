@@ -5,6 +5,7 @@ import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * Created by ChoiJK on 2017-01-08.
@@ -25,6 +26,13 @@ public class AlarmPropertice extends Activity {
             }
 
         });
-    }
 
+        ImageButton cancelBtn = (ImageButton) findViewById(R.id.cancel_btn);
+        cancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
 }
