@@ -1,6 +1,5 @@
 package alram.androidtown.org.asalarm;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,8 +16,7 @@ public class MainActivity extends AppCompatActivity {
         addAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent callAlarmPropertice = new Intent(MainActivity.this, AlarmPropertice.class);
-                startActivity(callAlarmPropertice);
+                setContentView(R.layout.alarm_propertice);
 
             }
         });
