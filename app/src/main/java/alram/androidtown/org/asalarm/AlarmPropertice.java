@@ -32,7 +32,7 @@ public class AlarmPropertice extends Activity {
             @Override
             public void onClick(View v) {
                 onDestroy();
-
+//test
             }
         });
     }
