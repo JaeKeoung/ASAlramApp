@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 setContentView(R.layout.alarm_propertice);
-
             }
         });
     }
